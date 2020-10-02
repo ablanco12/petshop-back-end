@@ -1,7 +1,7 @@
 class ClientSerializer < ActiveModel::Serializer
     include Rails.application.routes.url_helpers
   
-    attributes :lastname, :firstname, :homephone, :workphone
+    attributes :id, :lastname, :firstname, :homephone, :workphone
   
     
   
