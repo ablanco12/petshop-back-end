@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
-    # skip_before_action :verify_authenticity_token, :only => [:new, :create, :index, :edit, :update, :destroy]
-    skip_before_action :authorized, only: [:show, :update, :index, :create, :destroy, :edit]
+    skip_before_action :verify_authenticity_token, :only => [:new, :create, :index, :edit, :update, :destroy]
+    # skip_before_action :authorized, only: [:show, :update, :index, :create, :destroy, :edit]
    
     def index
         @appointments = Appointment.all 

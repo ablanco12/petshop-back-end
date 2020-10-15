@@ -1,6 +1,6 @@
 class PetsController < ApplicationController
-    # skip_before_action :verify_authenticity_token, :only => [:new, :create, :index, :edit, :update, :destroy]
-    skip_before_action :authorized, only: [:index, :create, :update, :show, :destroy]
+    skip_before_action :verify_authenticity_token, :only => [:new, :create, :index, :edit, :update, :destroy]
+    # skip_before_action :authorized, only: [:index, :create, :update, :show, :destroy]
 
     def index
         @pets = Pet.all
