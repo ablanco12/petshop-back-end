@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: petshop_development
   pool: 5
-  username:
+  username: 
   password:
   timeout: 5000
 
