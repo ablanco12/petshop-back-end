@@ -14,9 +14,7 @@ class ClientsController < ApplicationController
         render json: @client.pets
     end
 
-    def new
-
-    end
+    
 
     def create
         @client = Client.create(client_params)
