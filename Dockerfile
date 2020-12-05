@@ -1,5 +1,5 @@
 FROM ruby:2.7
-FROM node:6.7.0
+
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -16,3 +16,4 @@ COPY . .
 
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
+
